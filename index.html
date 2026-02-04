@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<meta charset="UTF-8">
+
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NRKXTMFN');</script>
+})(window,document,'script','dataLayer','GTM-NRKXTMFN');
+</script>
 <!-- End Google Tag Manager -->
-<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AutoClicker</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -179,7 +184,14 @@ footer {
 }
 </style>
 </head>
+
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRKXTMFN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header>
     <h1>AutoClicker</h1>
@@ -189,7 +201,7 @@ footer {
 <main>
     <section>
         <h2>Présentation</h2>
-        <p>AutoClicker est une application simple et efficace pour automatiser vos clics ou pressions de touches sur Windows. Idéal pour gagner du temps ou pour des tâches répétitives. AutoClicker est naturellement exempte de tout risque de virus pour votre ordinateur.</p>
+        <p>AutoClicker est une application simple et efficace pour automatiser vos clics ou pressions de touches sur Windows.</p>
     </section>
 
     <section>
@@ -205,28 +217,31 @@ footer {
     <section class="preview">
         <h2>Prévisualisation</h2>
         <img src="https://i.imgur.com/DeZUY5O.png" alt="Preview AutoClicker">
-        <p>
-            Découvrez l'interface d'AutoClicker : configurez vos intervalles, choisissez vos boutons ou touches, et activez le maintien continu pour automatiser vos tâches répétitives facilement. 
-            Cette prévisualisation vous permet de visualiser rapidement comment utiliser l'application dans votre quotidien.
-        </p>
     </section>
 
     <section>
         <h2>Téléchargement</h2>
         <p>Cliquez ci-dessous pour télécharger AutoClicker :</p>
-        <a class="download-btn" href="https://github.com/Nathou82/AutoClicker/releases/download/V.1/autoclicker.exe" download>Télécharger</a>
+        <a class="download-btn"
+           href="https://github.com/Nathou82/AutoClicker/releases/download/V.1/autoclicker.exe"
+           download>
+           Télécharger
+        </a>
     </section>
 </main>
 
 <footer>
     <span id="contact-trigger" style="text-decoration: underline; cursor:pointer;">Contact / Aide</span>
+
     <div style="font-size:0.8em; margin-top:5px;">
-        <a href="https://github.com/Nathou82/AutoClicker" target="_blank" style="text-decoration: underline; color:#6b7280;">Voir le code source</a>
+        <a href="https://github.com/Nathou82/AutoClicker" target="_blank" style="text-decoration: underline;">
+            Voir le code source
+        </a>
     </div>
+
     <div class="legal">
-        &copy; 2026 AutoClicker. <br>
-        Développé par Natha Dodo. <br>
-        <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+        &copy; 2026 AutoClicker.<br>
+        Développé par Natha Dodo.
     </div>
 </footer>
 
@@ -235,19 +250,18 @@ footer {
 </div>
 
 <script>
-    const trigger = document.getElementById('contact-trigger');
-    const popup = document.getElementById('contact-popup');
+const trigger = document.getElementById('contact-trigger');
+const popup = document.getElementById('contact-popup');
 
-    trigger.addEventListener('click', () => {
-        popup.classList.add('show');
-        setTimeout(() => {
-            popup.classList.remove('show');
-        }, 5000);
-    });
+trigger.addEventListener('click', () => {
+    popup.classList.add('show');
+    setTimeout(() => popup.classList.remove('show'), 5000);
+});
 </script>
 
 </body>
 </html>
+
 
 
 
